@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio gitFav</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="js/main.js" type="module" defer></script>
+
+</head>
+<body>
+  <div id="app">
+    <header class="search">
+      <img class="logo" src="imagem/gitfav.svg" alt="Imagem do logo gitFav">
+      <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
+      <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+      <button>
+        <img class="button-img" src="imagem/star.svg" alt="Imagem de uma estrela">
+        Favoritar
+      </button>
+    </header>
+    
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Repositories</th>
+            <th>Followers</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="add-favorites hide">
+        <div class="no-favorites">
+          <img src="imagem/Estrela (1).svg" alt="Iamgem de uma estrela">
+          <h2>Nenhum favorito ainda</h2>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
